@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: monty-hall-service
+  data:
+    mongodb:
+      uri: mongodb://localhost/monty_db
+
+server:
+  port: 8080
+
+simulator:
+  iterations: 5000
