@@ -57,15 +57,15 @@ Game will receive as an input 2 parameters box name and flag that indicates will
     Play One single game.
     
    Request body:
-    ```json
+    ```
     {
         "selectedBox": "box_1", // can be 'box_1', 'box_2', 'box_3'
-        "isChangeSelection": true
+        "isChangeSelection": true // should user change the initial box
     }
     ```
    
     Response:
-    ```json
+    ```
     {
         "gameId": "61689146e38db85a5a720b48", // just game id, useful for DB search
         "selectedBox": "box_3", // box that user keep at the end
@@ -82,7 +82,7 @@ Game will receive as an input 2 parameters box name and flag that indicates will
     Here is answer for the question: **‘Do I have a better chance to win if I change my box?’**
 
     Response:
-    ```json
+    ```
     {
         "numberOfGames": 5000, // total amout of games played
         "numberOfWins": 2551, // amount of wins
@@ -97,7 +97,7 @@ Game will receive as an input 2 parameters box name and flag that indicates will
    Return some stats from all games stored in DB. Which box got most wins? 
    
     Response:
-    ```json
+    ```
     {
         "mostWinningBox": "box_2", // box that won most amount of times
         "totalNumberOfWins": 860 // amount of wins for most lucky box
